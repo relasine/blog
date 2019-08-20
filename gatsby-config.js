@@ -5,6 +5,9 @@ module.exports = {
       "Kevin Simpson discusses tech, coding the front end, maker stuff, and games",
   },
   plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
     {

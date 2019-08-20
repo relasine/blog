@@ -10,6 +10,13 @@ const usePosts = () => {
             title
             slug
             author
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
