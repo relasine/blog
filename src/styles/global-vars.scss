@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap");
+@import-normalize;
+
+$yellow: #ffbe00;
+$white: #ffffff;
+$black: #000000;
+$gray-1: #e8e8ec;
+$gray-2: #979797;
+$gray-3: #5a5868;
+$gray-4: #19315a;
+$blue-1: #0f99d6;
+$blue-2: #0072ce;
+$blue-3: #005696;
+$banner-blue: #0d9fd9;
+$purple: #9e1e97;
+$pink: #fc01ff;
+$red: #ff0000;
+
+$font-sans-serif: "Open Sans", sans-serif;
+
+@function font-weight($key: "normal") {
+  @return map-get($font-weight-scale, $key);
+}
+$font-weight-scale: () !default;
+$font-weight-scale: map-merge(
+  (
+    "light": 300,
+    "normal": 400,
+    "bold": 700,
+    "extra-bold": 800,
+  ),
+  $font-weight-scale
+);
+
+@function font-size($key: "base") {
+  @return map-get($font-size-scale, $key);
+}
+$font-size-scale: () !default;
+$font-size-scale: map-merge(
+  (
+    "nano": 12px,
+    "micro": 14px,
+    "sm": 16px,
+    "base": 20px,
+    "md": 24px,
+    "lg": 28px,
+    "xl": 32px,
+    "xxl": 36px,
+    "huge": 40px,
+    "mega": 48px,
+    "jumbo": 56px,
+    "massive": 80px,
+    "gigantic": 100px,
+  ),
+  $font-size-scale
+);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+li {
+  list-style-type: none;
+}

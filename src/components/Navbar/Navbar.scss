@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  line-height: 1.6;
+  align-items: center;
+  justify-content: space-between;
+
+  &__link {
+    padding: 0 1rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--is-active {
+      text-decoration: underline;
+    }
+  }
+
+  &__link-container {
+  }
+}
